@@ -21,6 +21,14 @@ main {
   border-radius: 0.5rem;
 }
 
+#certificados {
+  order: 0;
+}
+
+.navegacion {
+  order: 1;
+}
+
 main section h1 {
   font-size: 4rem;
   margin: 0rem;
