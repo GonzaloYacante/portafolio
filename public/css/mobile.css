@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding-top: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+  position: fixed;
+  top: 0;
+  transition: box-shadow 250ms;
+}
+
+.header__logo {
+  margin-left: 2rem;
+  color: peachpuff;
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.header__logo img {
+  height: 4rem;
+  width: 20rem;
+}
+
+.header__nav{
+  padding-right: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: white;
+}
+
+.header-nav__list {
+  background-color: rgb(59, 57, 57);
+  padding: 0.5rem 1rem;
+  margin: 0rem 0.5rem;
+  border-radius: 0.5rem;
+  color: rgb(150, 150, 150);
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 4rem - 15rem);
+}
+
+main section h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0rem;
+  color:white;
+  margin-top: 1rem;
+}
+
+.informacionPersonal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+  padding-bottom: 2rem;
+  color: snow;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+   'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.datosPersonales__item { 
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 0.1rem rgb(156, 156, 156) solid;
+}
+
+.datosPersonales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 0.1rem rgba(156, 156, 156, 0.644);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem 2rem;
+  height: 28rem;
+  width: 30rem;
+  background-color: rgba(110, 110, 110, 0.719);
+  font-size: 1.5rem;
+}
+
+#linkPlatzi {
+  color: snow;
+}
+
+.datosPersonales p {
+  text-align: justify;
+  padding: 0.5rem;
+  color: white;
+}
+
+.informacionPersonal img {
+  border-radius: 1rem;
+  height: 28rem;
+  width: 18rem;
+}
+
+.skills {
+  padding-top: 2rem;
+  border-top: 0.1rem white solid;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills-div__div {
+  height: 17rem;
+  width: 14rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-div__div img {
+  height: 13rem;
+  width: 13rem;
+}
+
+.skills-div__div p {
+  color: black;
+  border-top: 0.1rem grey solid;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  width: 85%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 41, 41);
+  width: 100%;
+  color: rgb(180, 180, 180);
+  padding: 1rem;
+}
+
+.divFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divFooter a img {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#contactame {
+    font-size: 1.7rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+#copyright {
+  color: rgb(117, 117, 117);
+  font-size: 1.4rem;
+}
+
+
+.degradado {
+    padding: 0%;
+    margin: 0rem;
+    }
+    
+    .bg-pan-right {animation: 20s ease 0s infinite normal both running bg-pan-right;}
+    .bg-gradient-hor {background-image: linear-gradient(10000deg,#ff0073,#ff00aa,#ff00fb,#d000ff,#b700ff,
+      #9d00ff,#8400ff,#1500ff,#0026ff,#0055ff,#0088ff,#3e91cc,#00badb,#00d9ff,#2dcca7,#00ffd0,
+      #18bf02,#25d133,#6fff00,#91ff00,#b7ff00,#d9ff00,#fbff00,#ffdd00,#ffbf00,#ff9d00,#ff8800,
+      #ff6f00,#ff5500,#ff4000,#ff2a00,#ff1900,#ff0000);
+         background-size: 600% 100%; height: 100%;}
+    @-webkit-keyframes bg-pan-right {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }  
+    }
+    @keyframes bg-pan-right {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }  
+    }

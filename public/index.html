@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gonzalo Yacante (gonzaloyacantedev) Frontend Developer Page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonzaloyacantedev</title>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" type="image/png" href="./img/favicon.ico" />
+    <meta name="robots" content="index, follow">
+</head>
+
+<body class="container bg-pan-right bg-gradient-hor">
+    <header class="fixed-top">
+        <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand dropdown" href="#inicio">Gonzalo Yacante</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#contacto">Contacto</a>
+                        </li>
+                        
+                        <div class="dropdown">
+                            <button class="btn btn-transparent outline: none text-white dropdown-toggle ps-0 fs-5" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Certificados
+                            </button>
+                                            
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item d-inline-block" target="blank" href="./img/Certificados/Diploma-IntroWeb.pdf">Introduccion a la Web</a></li>
+                                <li><a class="dropdown-item d-inline-block" target="blank" href="./img/Certificados/Diploma - HTML5 y CSS3.pdf">HTML5 y CSS3 - Definitivo</a></li>
+                                <li><a class="dropdown-item d-inline-block" target="blank" href="./img/Certificados/Curso Práctico de HTML5 y CSS3.pdf">HTML5 y CSS3 - Practico</a></li>
+                                <li><a class="dropdown-item d-inline-block" target="blank" href="./img/Certificados/Diploma del Curso de Prework - Configuración de Entorno de Desarrollo en Windows.pdf">Prework - Configuración de Entorno de Desarrollo en Windows</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item d-inline-block" target="blank" href="https://platzi.com/p/gonzaloyacante/" target="blank">Ver todo</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1 id="inicio">Bienvenido a mi pagina</h1>
+        </section>
+
+        <div id="informacioPersonal" class="informacionPersonal">
+            <div id="carouselExampleCaptions" class="carousel" style="height: 28rem; margin: 1rem;" data-bs-ride="carousel">
+                <ol class="carousel-indicators mb-4">
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Informacion personal/Foto 1.jpg" class="d-block" alt="Foto 1 de Gonzalo Yacante">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>1</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Informacion personal/Foto 2.jpeg" class="d-block" alt="Foto 2 de Gonzalo Yacante">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>2</h5>
+                        </div>
+                    </div>
+                  
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            
+            <div class="datosPersonales">
+                <h3 class="datosPersonales__item">Acerca de mí</h3>
+
+                <p>
+                    Mi nombre es Gonzalo Yacante, soy Desarrollador Web especializado en Front-End. Nací y crecí en Buenos Aires, Argentina que es donde vivo hoy en día.
+                </p>
+
+                <p>
+                    Actualmente estoy estudiando en <a id="linkPlatzi" href="https://platzi.com" target="blank">platzi.com</a> y haciendo crecer mis conocimientos en este maravilloso mundo del desarrollo.
+                </p>
+
+            </div>
+        </div>
+
+        <div id="skills" class="skills">
+            <h2>Skills</h2>
+
+            <div class="skills__div">
+                <div class="skills-div__div">
+                    <img src="./img/Skills/HTML5.png" alt="Logo de HTML5">
+                    <p>
+                        HTML 5
+                    </p>
+                </div>
+                <div class="skills-div__div">
+                    <img src="./img/Skills/CSS3.png" alt="Logo de CSS3">
+                    <p>
+                        CSS 3
+                    </p>
+                </div>
+                <div class="skills-div__div">
+                    <img src="./img/Skills/Git.png" alt="Logo de Git">
+                    <p>
+                        Git
+                    </p>
+                </div>
+                <div class="skills-div__div">
+                    <img src="./img/Skills/Bootstrap5.png" alt="Logo de Bootstrap 5">
+                    <p>
+                        Bootstrap 5
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills mb-5 mt-5">
+            <h2 id="proyectos">Proyectos</h2>
+
+            <button type="button" class="btn btn-secondary mt-4 fs-5 text-center" style="width: 15rem; height: 3rem; margin: 0 auto;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Más información
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title text-dark ps-3" id="exampleModalLabel">Importante !</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-secondary fs-4">
+                            A medida que vaya aprendiendo más y creando más proyectos, voy a estar agregando cosas a la página y poniendo en práctica mis conocimientos.
+
+                            <hr>
+
+                            No te olvides de seguirme en instagram como <a href="https://www.instagram.com/gonzaloyacante/" target="blank">@gonzaloyacante</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer id="contacto">
+        <p id="contactame">Redes sociales y Contactos</p>
+
+        <div class="divFooter">
+            <a href="https://www.instagram.com/gonzaloyacante/" target="blank">
+                <img title="Instagram" class="iconosRS" src="./img/redes sociales/instagram.svg" alt="Icono de Instagram">
+            </a>
+            <a href="https://walink.co/64d4f4" target="blank">
+                <img title="WhatsApp" class="iconosRS" src="./img/redes sociales/whatsapp.svg" alt="Icono de WhatsApp">
+            </a>
+            <!-- <a href="https://open.spotify.com/user/lc5tv5p1ethe9ox5cfy832dmg" target="blank">
+                <img title="Spotify" class="iconosRS" src="./img/redes sociales/spotify.svg" alt="Icono de Spotify">
+            </a> -->
+            <!-- <a href="https://twitter.com/gonzaloyacante" target="blank">
+                <img title="Twitter" class="iconosRS" src="./img/redes sociales/twitter.svg" alt="Icono de Twitter">
+            </a> -->
+            <!-- <a href="tel:+541128385067">
+                <img title="Telefono" class="iconosRS" src="./img/redes sociales/telefono.png" alt="Icono de Telefono">
+            </a> -->
+            <a href="https://www.linkedin.com/in/gonzalo-yacante-4059771b3" target="blank">
+                <img title="Linkedin" class="iconosRS" src="./img/redes sociales/linkedin.svg" alt="Icono de linkedin">
+            </a>
+            <a href="mailto:gyacante9@gmail.com" target="blank">
+                <img title="Email" class="iconosRS" src="./img/redes sociales/email.png" alt="Icono de Email">
+            </a>
+            <a href="https://github.com/GonzaloYacante" target="blank">
+                <img title="GitHub" class="iconosRS" src="./img/redes sociales/Github.svg" alt="Icono de GitHub">
+            </a>
+        </div>
+
+        <p id="copyright">
+            2021 &copy; Gonzalo Yacante
+        </p>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
