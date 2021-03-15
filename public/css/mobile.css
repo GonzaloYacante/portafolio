@@ -17,45 +17,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  background-color: rgb(44, 44, 44);
-  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-  position: fixed;
-  top: 0;
-  transition: box-shadow 250ms;
-}
-
-.header__logo {
-  margin-left: 2rem;
-  color: peachpuff;
-  display: flex;
-  justify-content: flex-start;
-  flex-grow: 1;
-}
-
-.header__logo img {
-  height: 4rem;
-  width: 20rem;
-}
-
-.header__nav{
-  padding-right: 0.5rem;
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  color: white;
-}
-
-.header-nav__list {
-  background-color: rgb(59, 57, 57);
-  padding: 0.5rem 1rem;
-  margin: 0rem 0.5rem;
-  border-radius: 0.5rem;
-  color: rgb(150, 150, 150);
-  text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 main {
   min-height: calc(100vh - 4rem - 15rem);
 }
@@ -69,7 +30,7 @@ main section h1 {
   margin-top: 1rem;
 }
 
-.informacionPersonal {
+.info {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -80,10 +41,10 @@ main section h1 {
    'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.datosPersonales__item { 
-  text-align: center;
-  font-size: 2.5rem;
-  border-bottom: 0.1rem rgb(156, 156, 156) solid;
+.info img {
+  border-radius: 1rem;
+  height: 28rem;
+  width: 18rem;
 }
 
 .datosPersonales {
@@ -100,23 +61,23 @@ main section h1 {
   font-size: 1.5rem;
 }
 
+.datosPersonales-header { 
+  text-align: center;
+  font-size: 2.5rem;
+  border-bottom: 0.1rem rgb(156, 156, 156) solid;
+}
+
 #linkPlatzi {
   color: snow;
 }
 
-.datosPersonales p {
+.datosPersonales-body {
   text-align: justify;
   padding: 0.5rem;
   color: white;
 }
 
-.informacionPersonal img {
-  border-radius: 1rem;
-  height: 28rem;
-  width: 18rem;
-}
-
-.skills {
+.subTitulos {
   padding-top: 2rem;
   border-top: 0.1rem white solid;
   color: white;
@@ -125,14 +86,14 @@ main section h1 {
   flex-direction: column;
 }
 
-.skills__div {
+.skills-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.skills-div__div {
+.skills-item {
   height: 17rem;
   width: 14rem;
   margin: 2rem;
@@ -145,23 +106,35 @@ main section h1 {
   align-items: center;
 }
 
-.skills-div__div img {
+.skills-image {
   height: 13rem;
   width: 13rem;
+}
+
+.skills-more {
+  background-color: #fff;
+  border-radius: 0.3rem;
+}
+
+.skills-name {
+  width: 85%;
+  height: 3rem;
+  border-top: 0.1rem grey solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 #javascript {
   padding: 1.3rem;
 }
 
-.skills-div__div p {
+.skills-name p {
   color: black;
-  border-top: 0.1rem grey solid;
-  margin-top: 0.5rem;
-  padding-top: 0.5rem;
-  width: 85%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
 }
 
 footer {
@@ -175,13 +148,18 @@ footer {
   padding: 1rem;
 }
 
-.divFooter {
+.footer-header {
+    font-size: 1.7rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.footer-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.divFooter a img {
+.footer-icons a img {
   height: 3rem;
   width: 3rem;
   margin: 1rem;
@@ -190,11 +168,6 @@ footer {
 footer p {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-}
-
-#contactame {
-    font-size: 1.7rem;
-    margin: 1rem 0rem 0rem 0rem;
 }
 
 #copyright {
