@@ -1,26 +1,3 @@
-main {
-  min-height: calc(100vh - 4rem - 15rem);
-}
-
-.header {
-  height: 4rem;
-}
-
-.header__logo {
-  margin-left: 2rem;
-}
-
-.header__nav{
-  padding-right: 5rem;
-}
-
-.header-nav__list {
-  background-color: rgb(59, 57, 57);
-  padding: 0.5rem 1rem;
-  margin: 0rem 0.5rem;
-  border-radius: 0.5rem;
-}
-
 #certificados {
   order: 0;
 }
@@ -29,97 +6,82 @@ main {
   order: 1;
 }
 
-main section h1 {
-  font-size: 4rem;
+.titulo {
+  font-size: 3.5rem;
   margin: 0rem;
   margin-top: 1rem;
 }
 
-.informacionPersonal {
+.header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-title{
+  margin: 0rem;
+  padding: 0 0 0.3rem 0.7rem;
+}
+
+.info {
   margin: 2rem 0rem;
   padding-bottom: 2rem;
 }
 
-.datosPersonales__item { 
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
-}
-
 .datosPersonales {
   width: 50rem;
+  height: 28rem;
 }
 
-#linkPlatzi {
-  color: wheat;}
+.datosPersonales-header {
+  padding-bottom: 1.8rem;
+  font-size: 3rem;
+}
 
-#linkPlatzi:hover {
-  border-radius: 0.5rem;
+.linkPlatzi:hover {
+  border-radius: 0.3rem;
   background-color: yellowgreen;
   color: black;
 }
 
-.datosPersonales p {
+.datosPersonales-body {
   padding: 0.5rem;
   font-size: 1.8rem;
 }
 
-.skills-div__div {
-  height: 17rem;
-  width: 14rem;
-  margin: 2rem;
+.skills-item {
+  height: 18rem;
+  width: 15rem;
 }
 
-.divFooter a img {
+.go-top-botton:hover {
+  background-color: rgb(110, 110, 110);
+  width: 5.8rem;
+  height: 5.8rem;
+}
+
+.go-top-botton:active {
+  background-color: rgb(160, 160, 160);
+  width: 5.3rem;
+  height: 5.3rem;
+}
+
+.footer-icons a img {
   height: 5.5rem;
   width: 5.5rem;
   margin: 1.5rem 1rem;
   padding: 0.5rem;
 }
 
-.divFooter a img:hover {
+.footer-icons a img:hover {
   padding: 0rem;
+  transition: 300ms;
 }
 
-#contactame {
+.footer-header {
   font-size: 2rem;
 }
 
 #copyright {
   font-size: 1.6;
 }
-
-
-
-.degradado {
-    padding: 0%;
-    margin: 0rem;
-    }
-    
-    .bg-pan-right {animation: 20s ease 0s infinite normal both running bg-pan-right;}
-    .bg-gradient-hor {background-image: linear-gradient(10000deg,#ff0073,#ff00aa,#ff00fb,#d000ff,#b700ff,
-      #9d00ff,#8400ff,#1500ff,#0026ff,#0055ff,#0088ff,#3e91cc,#00badb,#00d9ff,#2dcca7,#00ffd0,
-      #18bf02,#25d133,#6fff00,#91ff00,#b7ff00,#d9ff00,#fbff00,#ffdd00,#ffbf00,#ff9d00,#ff8800,
-      #ff6f00,#ff5500,#ff4000,#ff2a00,#ff1900,#ff0000);
-         background-size: 600% 100%; height: 100%;}
-    @-webkit-keyframes bg-pan-right {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }  
-    }
-    @keyframes bg-pan-right {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }  
-    }

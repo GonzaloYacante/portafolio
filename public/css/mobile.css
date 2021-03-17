@@ -11,7 +11,12 @@ html {
 body {
   font-size: 1.6rem;
   padding-top: 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+   'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* @use "@material/card";
+@include card.core-styles; */
 
 a, p, h1, h2, h3, h3, h4, h5, h6 {
   text-decoration: none;
@@ -28,20 +33,31 @@ a, p, h1, h2, h3, h3, h4, h5, h6 {
 
 .logo-title{
   margin: 0rem;
-  padding: 0 0 0.1rem 0.3rem;
+  padding: 0 0 0.1rem 0.5rem;
 }
 
 main {
   min-height: calc(100vh - 4rem - 15rem);
 }
 
-main section h1 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 2.5rem;
+.titulo {
+  font-size: 2.7rem;
   text-align: center;
-  margin: 0rem;
-  color:white;
-  margin-top: 1rem;
+  margin: 1rem 0rem 0rem 0rem;
+  color:#fff;
+}
+
+.subTitulos {
+  font-size: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border-top: 0.1rem #fff solid;
+  color: #fff;
+  text-align: center;
+}
+
+#inicio, #skillls, #proyecto, #contacto {
+  transition: 3s;
 }
 
 .info {
@@ -50,54 +66,45 @@ main section h1 {
   flex-wrap: wrap;
   margin: 2rem 0rem;
   padding-bottom: 2rem;
-  color: snow;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-   'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .info img {
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   height: 28rem;
   width: 18rem;
+  margin: 1rem 2rem;
+  object-fit: cover;
 }
 
 .datosPersonales {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid 0.1rem rgba(156, 156, 156, 0.644);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  margin: 1rem 2rem;
-  height: 28rem;
-  width: 30rem;
-  background-color: rgba(110, 110, 110, 0.719);
+  /* background-color: rgba(70, 70, 70, 0.900); */
+  background-color: rgb(33, 37, 41, 95%);
+  border-radius: 0.5rem;
   font-size: 1.5rem;
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+  height: 28rem;
+  width: 33rem;
 }
 
 .datosPersonales-header { 
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #fff;
   border-bottom: 0.1rem rgb(156, 156, 156) solid;
-}
-
-#linkPlatzi {
-  color: snow;
 }
 
 .datosPersonales-body {
   text-align: justify;
   padding: 0.5rem;
-  color: white;
 }
 
-.subTitulos {
-  padding-top: 2rem;
-  border-top: 0.1rem white solid;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+.linkPlatzi {
+  color: rgb(255, 255, 255);
 }
 
 .skills-container {
@@ -112,8 +119,8 @@ main section h1 {
   width: 14rem;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: white;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.35);
+  background-color: #fff;
+  box-shadow: 0rem 1rem 1rem rgba(0,0,0,0.35);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,7 +137,7 @@ main section h1 {
   border-radius: 0.3rem;
 }
 
-.skills-name {
+.skills-footer {
   width: 85%;
   height: 3rem;
   border-top: 0.1rem grey solid;
@@ -139,16 +146,89 @@ main section h1 {
   align-items: center;
 }
 
+.skills-name {
+  color: black;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+}
+
 #javascript {
   padding: 1.3rem;
 }
 
-.skills-name p {
-  color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;
-  margin: 0;
-  font-weight: 500;
+.more-info {
+  margin: 0 auto;
+}
+
+.proyectos-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.go-top-container {
+  position: fixed;
+  bottom: 2rem;
+  right: -1.4rem;
+  width: 5rem;
+  height: 5rem;
+  z-index: -1;
+}
+
+.go-top-botton {
+  width: 0rem;
+  height: 0rem;
+  background-color: rgb(33, 37, 41);
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transition: .3s;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-botton img {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  transition: .3s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-botton {
+  animation: pupop .3s ease-in-out;
+  width: 5rem;
+  height: 5rem;
+  z-index: 11;
+}
+
+.show img {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100%{
+    width: 5rem;
+    height: 5rem;
+  }
 }
 
 footer {
@@ -179,13 +259,8 @@ footer {
   margin: 1rem;
 }
 
-footer p {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
-
 #copyright {
-  color: rgb(117, 117, 117);
+  color: rgb(140, 140, 140);
   font-size: 1.4rem;
 }
 
@@ -194,13 +269,36 @@ footer p {
     padding: 0%;
     margin: 0rem;
     }
-    
-    .bg-pan-right {animation: 20s ease 0s infinite normal both running bg-pan-right;}
-    .bg-gradient-hor {background-image: linear-gradient(10000deg,#ff0073,#ff00aa,#ff00fb,#d000ff,#b700ff,
-      #9d00ff,#8400ff,#1500ff,#0026ff,#0055ff,#0088ff,#3e91cc,#00badb,#00d9ff,#2dcca7,#00ffd0,
-      #18bf02,#25d133,#6fff00,#91ff00,#b7ff00,#d9ff00,#fbff00,#ffdd00,#ffbf00,#ff9d00,#ff8800,
-      #ff6f00,#ff5500,#ff4000,#ff2a00,#ff1900,#ff0000);
-         background-size: 600% 100%; height: 100%;}
+    .bg-pan-right {animation: 30s ease 0s infinite normal both running bg-pan-right;}
+    .bg-gradient-hor {background-image: linear-gradient(10000deg,#ff0000, #FF0400, #FF0400, #FF0C00, #FF0F00, #FF1300, #FF1700, #FF1B00, #FF1F00, #FF2300, 
+      #FF2700, #FF2A00, #FF2E00, #FF3200, #FF3600, #FF3A00, #FF3E00, #FF4200, #FF4600, #FF4900, #FF4D00, #FF5100, #FF5500, #FF5900, #FF6100, 
+      #FF6400, #FF6800, #FF6C00, #FF7000, #FF7400, #FF7800, #FF7C00, #FF8000, #FF8300, #FF8700, #FF8B00, #FF8F00, #FF9300, #FF9700, #FF9B00, 
+      #FF9E00, #FFA200, #FFA600, #FFAA00, #FFAE00, #FFB200, #FFB600, #FFB900, #FFBD00, #FFC100, #FFC500, #FFC900, #FFCD00, #FFD100, #FFD500, 
+      #FFD800, #FFDC00, #FFE000, #FFE400, #FFE800, #FFEC00, #FFF000, #FFF300, #FFF700, #FFFB00, #FFFF00, #FBFF00, #F7FF00, #F3FF00, #F0FF00, 
+      #ECFF00, #E8FF00, #E4FF00, #E0FF00, #DCFF00, #D8FF00, #D4FF00, #D1FF00, #CDFF00, #C9FF00, #C5FF00, #C1FF00, #BDFF00, #B9FF00, #B6FF00, 
+      #B2FF00, #AEFF00, #AAFF00, #A6FF00, #A2FF00, #9EFF00, #9BFF00, #97FF00, #93FF00, #8FFF00, #8BFF00, #87FF00, #83FF00, #80FF00, #7CFF00, 
+      #78FF00, #74FF00, #70FF00, #6CFF00, #68FF00, #64FF00, #61FF00, #5DFF00, #59FF00, #55FF00, #51FF00, #4DFF00, #49FF00, #46FF00, #42FF00, 
+      #3EFF00, #3AFF00, #36FF00, #32FF00, #2EFF00, #2AFF00, #27FF00, #23FF00, #1FFF00, #1BFF00, #17FF00, #13FF00, #0FFF00, #0CFF00, #08FF00, 
+      #04FF00, #00FF00, #00FF04, #00FF08, #00FF0C, #00FF0F, #00FF13, #00FF17, #00FF1B, #00FF1F, #00FF23, #00FF27, #00FF2A, #00FF2E, #00FF32, 
+      #00FF36, #00FF3A, #00FF3E, #00FF42, #00FF46, #00FF49, #00FF4D, #00FF51, #00FF55, #00FF59, #00FF5D, #00FF61, #00FF64, #00FF68, #00FF6C, 
+      #00FF70, #00FF74, #00FF78, #00FF7C, #00FF80, #00FF83, #00ff87, #00FF8B, #00FF8F, #00FF93, #00FF97, #00FF9B, #00FF9E, #00FFA2, #00FFA6, 
+      #00FFAA, #00FFAE, #00FFB2, #00FFB6, #00FFB9, #00FFBD, #00FFC1, #00FFC5, #00FFC9, #00FFCD, #00FFD1, #00FFD4, #00FFD8, #00FFDC, #00FFE0, 
+      #00FFE4, #00FFE8, #00FFEC, #00FFF0, #00FFF3, #00FFF7, #00FFFB, #00FBFF, #00F7FF, #00F3FF, #00F0FF, #00ECFF, #00E8FF, #00E4FF, #00E0FF, 
+      #00DCFF, #00D8FF, #00D4FF, #00CDFF, #00C9FF, #00C1FF, #00CDFF, #00C5FF, #00C1FF, #00BDFF, #00B9FF, #00B6FF, #00B2FF, #00AEFF, #00AAFF, 
+      #00A6FF, #00A2FF, #009EFF, #009BFF, #0097FF, #0093FF, #008FFF, #008BFF, #0087FF, #0083FF, #0080FF, #007CFF, #0078FF, #0074FF, #0070FF, 
+      #006CFF, #0068FF, #0064FF, #0061FF, #005DFF, #0059FF, #0055FF, #0051FF, #004DFF, #0049FF, #0046FF, #0042FF, #003EFF, #003AFF, #0036FF, 
+      #0032FF, #002EFF, #002BFF, #0027FF, #001FFF, #001BFF, #0017FF, #0013FF, #000FFF, #0008FF, #0004FF, #0000FF, #0400FF, #0800FF, #0C00FF, 
+      #0C00FF, #0F00FF, #1300FF, #1700FF, #1B00FF, #1F00FF, #2300FF, #2700FF, #2A00FF, #2E00FF, #3200FF, #3600FF, #3A00FF, #3E00FF, #4200FF, 
+      #4600FF, #4900FF, #4D00FF, #5100FF, #5500FF, #5900FF, #5D00FF, #6100FF, #6400FF, #6800FF, #6C00FF, #7000FF, #7400FF, #7800FF, #7C00FF, 
+      #8000FF, #8300FF, #8700FF, #8B00FF, #8F00FF, #9300FF, #9700FF, #9B00FF, #9E00FF, #A200FF, #A600FF, #AA00FF, #AE00FF, #B200FF, #B600FF, 
+      #B900FF, #BD00FF, #C100FF, #C500FF, #C900FF, #CD00FF, #D100FF, #D500FF, #C900FF, #CD00FF, #D100FF, #D500FF, #D800FF, #DC00FF, #E000FF, 
+      #E400FF, #E800FF, #EC00FF, #F000FF, #F300FF, #F700FF, #FB00FF, #FF00FF, #FF00FB, #FF00F7, #FF00F3, #FF00F0, #FF00EC, #FF00E8, #FF00E4, 
+      #FF00E0, #FF00EC, #FF00E8, #FF00E4, #FF00E0, #FF00DC, #FF00D8, #FF00D4, #FF00D1, #FF00CD, #FF00C9, #FF00C5, #FF00C1, #FF00BD, #FF00B9, 
+      #FF00B6, #FF00B2, #FF00AE, #FF00AA, #FF00A6, #FF00A2, #FF009E, #FF009B, #FF0097, #FF0093, #FF008B, #FF0087, #FF0083, #FF0080, #FF007C, 
+      #FF0078, #FF0074, #FF0070, #FF006C, #FF0068, #FF0064, #FF0061, #FF005D, #FF0059, #FF0055, #FF0051, #FF004D, #FF0049, #FF0046, #FF0042, 
+      #FF003E, #FF003A, #FF0036, #FF0032, #FF002E, #FF002B, #FF0027, #FF0023, #FF001F, #FF001B, #FF0017, #FF0013, #FF000F, #FF000C, #FF0008, 
+      #FF0004, #FF0000);
+      background-size: 600% 100%; height: 100%;}
     @-webkit-keyframes bg-pan-right {
       0% {
         background-position: 0% 50%;
