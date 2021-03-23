@@ -74,14 +74,15 @@ main {
   width: 18rem;
   margin: 1rem 2rem;
   object-fit: cover;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.6);
 }
 
 .datosPersonales {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: rgba(70, 70, 70, 0.900); */
   background-color: rgb(33, 37, 41, 95%);
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.6);
   border-radius: 0.5rem;
   font-size: 1.5rem;
   margin: 1rem 2rem;
