@@ -117,7 +117,7 @@ main {
   width: 14rem;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: #fff;
+  background-color: rgb(33, 37, 41, 95%);;
   box-shadow: 0rem 1rem 1rem rgba(0,0,0,0.35);
   display: flex;
   flex-direction: column;
@@ -145,7 +145,7 @@ main {
 }
 
 .skills-name {
-  color: black;
+  color: #fff;
   font-size: 1.2rem;
   margin: 0;
   font-weight: 500;
